@@ -1,0 +1,11 @@
+package javaciktisibicimlendirmeprintf;
+public class JavaCiktisiBicimlendirmePrintf {
+    public static void main(String[] args) {
+        double miktar = 12618.98;
+        double ucretOrani = 0.0013;
+        double ucret = miktar*ucretOrani;
+        System.out.printf("Ucret:%4.2f TL",ucret);
+        
+    }
+    
+}
