@@ -1,0 +1,18 @@
+package driverslicense;
+import java.util.Scanner;
+public class DriversLicense {
+    public static void main(String[] args) {
+        Scanner klavye = new Scanner(System.in);
+        System.out.print("Lütfen yaşınızı giriniz: ");
+        int yas = klavye.nextInt();
+        
+        if (yas<18) {
+            System.out.println("Ehliyet alamazsınız.");
+        }
+        if (yas>=18) {   // buraya else yazıp parantezi kullanmadan aşağı satıra geçip bitirebilirsin!
+            System.out.println("Ehliyet alabiilirsiniz.");
+        }  
+    }
+    
+    
+}
