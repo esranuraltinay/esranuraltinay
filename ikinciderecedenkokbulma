@@ -1,0 +1,27 @@
+package ıkınciderecedenkokbulma;
+import java.util.Scanner;
+public class IkınciDerecedenKokBulma {
+    public static void main(String[] args) {
+        Scanner klavye = new Scanner(System.in);
+        System.out.println("(ax2+bx+c) ikinci dereceden bir denklemdir.\n Denklemdeki sabitleri aşağıdaki gibi sırayla girin");
+        System.out.print("a değerini giriniz: ");
+        double a = klavye.nextInt(); 
+        System.out.println("b değerini giriniz: ");
+        double b = klavye.nextInt();
+        System.out.println("c değerini giriniz: ");
+        double c = klavye.nextInt();
+        double delta = (b*b)-(4*a*c);
+         if (delta>0){
+             double x1 = ((-1*b)- Math.sqrt(delta)) / (2*a);
+             double x2 = ((-1*b)+ Math.sqrt(delta)) / (2*a);
+             System.out.println("x1= " +x1 + "x2= " + x2);
+         }
+         if (delta<0){
+             System.out.println("Denklemin gerçel kökü yoktur.");
+         }
+         if (delta == 0){
+             double x = (-1*b)/ (2*a);
+             System.out.println("Çakışık kökü var x1=x2=" +x);
+         }
+    }   
+}
