@@ -1,0 +1,20 @@
+package stringkarsilastirma;
+public class StringKarsilastirma {
+    public static void main(String[] args) {
+        String s1 = "Merhaba Dunya";
+        String s2 = "Merhaba Dunya";
+        String s3 = "Merhaba Mars";
+        System.out.println(s1.equals(s2));
+        System.out.println(s1.equals(s3));
+        System.out.println(s1.compareTo(s2));
+        System.out.println(s1.compareTo(s3)); // neden -9 çünkü s1 s3e eşit olm. için küçük bir sayı döndürür özellikle -9 olmasının sebebi yok
+        System.out.println(s1.startsWith("Me"));
+        System.out.println(s1.startsWith("me"));
+        System.out.println(s1.endsWith("ya"));
+        System.out.println(s1.endsWith("y"));
+        System.out.println(s1.contains("Du"));
+        System.out.println(s1.contains("du"));
+        
+    }
+    
+}
