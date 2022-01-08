@@ -1,0 +1,14 @@
+package javaapplication25;
+import java.util.Scanner;
+public class JavaApplication25 {
+   public static void main(String[] args) {
+       Scanner klavye= new Scanner(System.in);
+       System.out.println("Km'ye çevirmek istedİğiniz sayıyı giriniz:");
+       double sayi= klavye.nextDouble();
+       double mil= 100;
+       final double KILOMETRE_MIL_KATSAYISI= 1.609;
+       double kilometre= mil*KILOMETRE_MIL_KATSAYISI;
+       System.out.print("kilometre:"+ kilometre);
+    }
+    
+}
